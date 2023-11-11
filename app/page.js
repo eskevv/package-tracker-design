@@ -1,113 +1,123 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="min-h-screen p-6 grid place-items-center bg-[#f1f1f1]">
+      <article aria-label="tracking details"
+               className="font-[Poppins] grid gap-6 max-w-fit bg-[#FFFFFF] p-8 rounded-lg text-[#10153E]">
+        <h2 className="font-[Merriweather] font-bold text-2xl">Package Details</h2>
+        <div className="flex justify-between flex-wrap items-center gap-4 bg-[#F7F7FA] p-4 rounded-md border-[#E3E5F1] border">
+          <div className="grid gap-1">
+            <div className="flex items-center gap-1">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_147)">
+                  <path d="M11.5 2.75L18.8333 6.875V15.125L11.5 19.25L4.16666 15.125V6.875L11.5 2.75Z" stroke="#60679F"
+                        stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.5 11L18.8333 6.875" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  <path d="M11.5 11V19.25" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  <path d="M11.5 11L4.16666 6.875" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  <path d="M15.1667 4.8125L7.83334 8.9375" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_147">
+                    <rect width="22" height="22" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p className="text-xs uppercase bold text-[#60679F]">Tracking Number</p>
+            </div>
+            <p>373325383577912985</p>
+          </div>
+          <div className="grid gap-1">
+            <div className="flex items-center gap-1">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_112)">
+                  <path
+                    d="M11.5 8.25V19.25M11.5 19.25C9.55508 19.25 7.68982 18.4774 6.31455 17.1021C4.93928 15.7268 4.16667 13.8616 4.16667 11.9167M11.5 19.25C13.4449 19.25 15.3102 18.4774 16.6855 17.1021C18.0607 15.7268 18.8333 13.8616 18.8333 11.9167M19.75 11.9167H17.9167M5.08333 11.9167H3.25"
+                    stroke="#60679F" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M11.5 8.25C13.0188 8.25 14.25 7.01878 14.25 5.5C14.25 3.98122 13.0188 2.75 11.5 2.75C9.98122 2.75 8.75 3.98122 8.75 5.5C8.75 7.01878 9.98122 8.25 11.5 8.25Z"
+                    stroke="#60679F" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_112">
+                    <rect width="22" height="22" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p className="text-xs uppercase bold text-[#60679F]">Weight</p>
+            </div>
+            <p>0.3 lb</p>
+          </div>
+          <div className="grid gap-1 ">
+            <div className="flex items-center  gap-1">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_132)">
+                  <path d="M16.0833 2.75L19.75 6.41667L6.91667 19.25L3.25 15.5833L16.0833 2.75Z" stroke="#60679F"
+                        stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15.1667 6.41667L13.7917 5.04167" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  <path d="M12.4167 9.16666L11.0417 7.79166" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  <path d="M9.66669 11.9167L8.29169 10.5417" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  <path d="M6.91669 14.6667L5.54169 13.2917" stroke="#60679F" stroke-width="1.375" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_132">
+                    <rect width="22" height="22" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p className="text-xs uppercase bold text-[#60679F]">Dimensions</p>
+            </div>
+            <p>37 x 26 x 7 in</p>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className="grid gap-4 max-w-md relative z-10">
+          <div className="absolute w-[1px] left-2 -z-10 top-2 bottom-0 bg-[#60679F]"></div>
+          <div className="grid grid-cols-[auto_1fr] gap-3">
+            <div className="mt-1 w-4 h-4 bg-[#F7F7FA] border-[3px] border-[#60679F] rounded-full"></div>
+            <div>
+              <p>The shipment has arrived at the terminal.</p>
+              <time className="text-xs text-[#60679F]" dateTime="2017-02-14">March 23 at 08.20</time>
+            </div>
+          </div>
+          <div className="grid grid-cols-[auto_1fr] gap-3">
+            <div className="mt-1 w-4 h-4 border bg-[#F7F7FA] border-[#60679F] rounded-full"></div>
+            <div>
+              <p>The shipment is in transit.</p>
+              <time className="text-xs text-[#60679F]" dateTime="2017-02-14">March 22 at 07.20 </time>
+            </div>
+          </div>
+          <div className="grid grid-cols-[auto_1fr] gap-3">
+            <div className="mt-1 w-4 h-4 border bg-[#F7F7FA] border-[#60679F] rounded-full"></div>
+            <div>
+              <p>The broadcast is sorted and forwarded.</p>
+              <time className="text-xs text-[#60679F]" dateTime="2017-02-14">March 22 at 00.38 </time>
+            </div>
+          </div>
+          <div className="grid grid-cols-[auto_1fr] gap-3">
+            <div className="mt-1 w-4 h-4 border bg-[#F7F7FA] border-[#60679F] rounded-full"></div>
+            <div>
+              <p>Consignment has been dispatched to the terminal and forwarded.</p>
+              <time className="text-xs text-[#60679F]" dateTime="2017-02-14">March 22 at 00.33</time>
+            </div>
+          </div>
+          <div className="grid grid-cols-[auto_1fr] gap-3">
+            <div className="mt-1 w-4 h-4 border bg-[#F7F7FA] border-[#60679F] rounded-full"></div>
+            <div>
+              <p>We have received information about the shipment, which is currently with the sender or is on its way to
+                Brings terminal. The tracking is updated when the shipment has arrived at the terminal in the receiving
+                country.</p>
+              <time class="text-xs text-[#60679F]" datetime="2017-02-14">March 21 at 07.35</time>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
   )
 }
